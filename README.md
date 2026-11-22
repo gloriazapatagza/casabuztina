@@ -13,6 +13,7 @@ Al final de `index.html` hay dos datos por llenar:
 
 - `WHATSAPP`: el número con lada (por ejemplo `5218112345678`). Con él, los botones de inscribirse, reservar y apartar el horno abren WhatsApp con un mensaje ya escrito. Mientras esté vacío, llevan al Instagram @casabuztina.
 - `DIRECCION`: la dirección del taller, que aparece en el pie de página.
+- `MERCADOPAGO`: un link de pago de Mercado Pago por paquete. Mientras un link esté vacío, su botón abre WhatsApp.
 
 ## Siguientes pasos
 
