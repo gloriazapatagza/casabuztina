@@ -25,6 +25,8 @@ a:focus-visible,button:focus-visible{outline:2px solid #3749C3;outline-offset:3p
 @media (max-width: 640px){
   .solo-escritorio{display:none!important}
   .solo-movil{display:flex!important}
+  .gatos{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px!important;margin:0 -32px;padding:0 32px 10px;scroll-padding:0 32px}
+  .gatos>figure{flex:0 0 70%;scroll-snap-align:start}
   h1{font-size:32px!important}
   h2{font-size:34px!important}
   #inicio .dark-box, section [style*="rgba(30,26,22,0.72)"]{padding:24px!important}
@@ -392,7 +394,8 @@ a:focus-visible,button:focus-visible{outline:2px solid #3749C3;outline-offset:3p
 </div>
 <svg width="200" height="110" viewBox="0 0 220 120" fill="none" stroke="#2E2A24" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M58 92C52 64 84 42 124 44C164 46 194 62 194 86C194 102 170 106 132 106H76C66 106 60 100 58 92Z"></path><path d="M60 88C50 80 52 62 68 58C82 55 94 66 92 80C90 94 70 98 60 88Z"></path><path d="M62 62L58 47L72 57"></path><path d="M80 57L88 45L90 61"></path><path d="M66 76Q70 79 74 76"></path><path d="M80 76Q84 79 88 76"></path><path d="M194 86C208 100 186 114 146 111C120 109 96 112 86 104"></path><path d="M120 46Q126 56 122 66"></path><path d="M138 46Q145 58 140 69"></path><path d="M156 50Q162 62 156 73"></path><path d="M173 58Q177 68 172 77"></path></svg>
 </div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px">
+<p class="solo-movil" style="margin: 0 0 10px; font-size: 14px; color: #6B6156">Desliza para conocerlos →</p>
+<div class="gatos" aria-label="Los gatitos" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px">
 <figure style="margin: 0; border: 1px solid #2E2A24; border-radius: 24px 24px 4px 4px; padding: 6px">
 <img src="assets/gato-senor.jpg" alt="Señor, un gato atigrado gris" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: 75% 55%; border-radius: 19px 19px 2px 2px">
 <figcaption style="padding: 12px 8px 6px; display: flex; justify-content: space-between; align-items: baseline"><span style="font-family: 'Cormorant Garamond', serif; font-size: 26px">Señor</span></figcaption>
