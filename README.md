@@ -4,15 +4,20 @@ Página pública del taller de cerámica Casa Buztina.
 
 ## Qué hay aquí
 
-- `index.html`: la página completa (talleres, horarios, piezas de alumnas, espacio digital, experiencias, renta del horno y los gatitos).
-- `assets/`: logo y fotos del taller. `assets/piezas/` tiene las fotos del carrusel de piezas de alumnas.
+- `index.html`: Inicio (portada, servicios, piezas de alumnas y alumnos, comunidad).
+- `talleres.html`: talleres, paquetes, horarios, faltas y reposiciones, y formas de pago.
+- `experiencias.html`: experiencias y clases privadas.
+- `horno.html`: renta del horno.
+- `gatitos.html`: Señor, Jiji, Pastita y Coco.
+- `assets/sitio.css` y `assets/sitio.js`: estilos y funciones compartidas por todas las páginas.
+- `assets/`: logo y fotos. `assets/piezas/` tiene las fotos del carrusel de piezas.
 
 ## Cambios rápidos
 
-Al final de `index.html` hay dos datos por llenar:
+Al inicio de `assets/sitio.js` están los datos que se cambian con frecuencia:
 
-- `WHATSAPP`: el número con lada (por ejemplo `5218112345678`). Con él, los botones de inscribirse, reservar y apartar el horno abren WhatsApp con un mensaje ya escrito. Mientras esté vacío, llevan al Instagram @casabuztina.
-- `DIRECCION`: la dirección del taller, que aparece en el pie de página.
+- `WHATSAPP`: número con lada. Los botones de inscribirse, reservar y apartar el horno abren WhatsApp con un mensaje ya escrito.
+- `DIRECCION`: dirección del taller, en el pie de página.
 - `MERCADOPAGO`: un link de pago de Mercado Pago por paquete. Mientras un link esté vacío, su botón abre WhatsApp.
 
 ## Siguientes pasos

@@ -4,55 +4,35 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Casa Buztina · Taller de cerámica</title>
-<meta name="description" content="Casa Buztina, taller de cerámica: talleres de torno y construcción manual, experiencias, clases privadas y renta de horno.">
+<meta name="description" content="Casa Buztina, taller de cerámica en Monterrey: talleres de torno y construcción manual, experiencias, clases privadas y renta de horno.">
 <meta property="og:title" content="Casa Buztina · Taller de cerámica">
-<meta property="og:description" content="Talleres de construcción manual, torno y experiencias.">
+<meta property="og:description" content="Casa Buztina, taller de cerámica en Monterrey: talleres de torno y construcción manual, experiencias, clases privadas y renta de horno.">
 <meta property="og:image" content="assets/hero-entrada.jpg">
 <link rel="icon" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&amp;family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;display=swap" rel="stylesheet">
-<style>
-body{margin:0;background:#FBF6EC;color:#2E2A24;font-family:"EB Garamond",Georgia,serif}
-a{color:#3749C3}a:hover{color:#26348F}
-img{display:block}
-</style>
-<style>
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
-a:focus-visible,button:focus-visible{outline:2px solid #3749C3;outline-offset:3px}
-.solo-movil{display:none!important}
-.carrusel{scrollbar-width:thin}
-@media (max-width: 640px){
-  .solo-escritorio{display:none!important}
-  .solo-movil{display:flex!important}
-  .gatos{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px!important;margin:0 -32px;padding:0 32px 10px;scroll-padding:0 32px}
-  .gatos>figure{flex:0 0 70%;scroll-snap-align:start}
-  h1{font-size:32px!important}
-  h2{font-size:34px!important}
-  #inicio .dark-box, section [style*="rgba(30,26,22,0.72)"]{padding:24px!important}
-}
-</style>
+<link rel="stylesheet" href="assets/sitio.css">
+<script src="assets/sitio.js" defer></script>
 </head>
-<body id="top">
-<div style="background: #FBF6EC; color: #2E2A24; font-family: 'EB Garamond', Georgia, serif; font-size: 18px; line-height: 1.55">
-
-<header style="border-bottom: 1px solid #2E2A24; background: #FBF6EC">
-<div style="max-width: 1240px; margin: 0 auto; padding: 14px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px">
-<a href="#top" aria-label="Casa Buztina, inicio" style="display: block"><img src="assets/logo.png" alt="Casa Buztina" style="height: 52px; width: auto"></a>
-<nav aria-label="Secciones" style="display: flex; flex-wrap: wrap; gap: 6px 26px; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase">
-<a href="#talleres" style="color: #2E2A24; text-decoration: none">Talleres</a>
-<a href="#horarios" style="color: #2E2A24; text-decoration: none">Horarios</a>
-<a href="#pagos" style="color: #2E2A24; text-decoration: none">Pagos</a>
-<a href="#experiencias" style="color: #2E2A24; text-decoration: none">Experiencias</a>
-<a href="#horno" style="color: #2E2A24; text-decoration: none">Horno</a>
-<a href="#gatitos" style="color: #2E2A24; text-decoration: none">Gatitos</a>
+<body>
+<div class="pagina">
+<header class="cabecera">
+<div class="cabecera-in">
+<a href="index.html" aria-label="Casa Buztina, inicio" class="logo"><img src="assets/logo.png" alt="Casa Buztina" style="height: 52px; width: auto"></a>
+<nav id="menu" aria-label="Menú principal">
+<a href="index.html" aria-current="page">Inicio</a>
+<a href="talleres.html">Talleres</a>
+<a href="experiencias.html">Experiencias</a>
+<a href="horno.html">Horno</a>
+<a href="gatitos.html">Gatitos</a>
 </nav>
-<div style="display: flex; align-items: center; gap: 20px; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase">
+<div class="acciones">
 <a href="https://instagram.com/casabuztina" data-wa="Hola, me gustaría inscribirme a un taller en Casa Buztina." target="_blank" rel="noopener" style="background: #3749C3; color: #FBF6EC; text-decoration: none; padding: 12px 22px; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Inscríbete</a>
+<button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 6h16M3 11h16M3 16h16"></path></svg></button>
 </div>
 </div>
 </header>
-
+<main>
 <section id="inicio" style="position: relative; min-height: 640px; display: flex; align-items: flex-end; overflow: hidden; background: #1E1A16">
 <img src="assets/hero-entrada.jpg" alt="La entrada de Casa Buztina de noche, con la puerta abierta y el taller iluminado" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 45%">
 <div style="position: relative; max-width: 1240px; width: 100%; margin: 0 auto; padding: 48px 32px; box-sizing: border-box">
@@ -65,19 +45,12 @@ a:focus-visible,button:focus-visible{outline:2px solid #3749C3;outline-offset:3p
 </div>
 </section>
 
-<section id="talleres" style="max-width: 1240px; margin: 0 auto; padding: 96px 32px 72px; box-sizing: border-box">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px 48px; margin-bottom: 40px">
-<div style="max-width: 640px">
-<p style="margin: 0 0 10px; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #3749C3">Los talleres</p>
-<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; font-size: 46px; line-height: 1.08">Cada ciclo son 4 semanas, con una clase de 3 horas a la semana en tu horario fijo.</h2>
-</div>
-<p style="margin: 0; max-width: 360px; color: #6B6156">Incluye todos los materiales: variedad de arcillas de alta temperatura, bajo esmaltes, esmaltes y quemas. Cupo limitado.</p>
-</div>
-
-<div class="solo-movil" style="flex-direction: column; gap: 10px">
-<p style="margin: 0; font-size: 14px; color: #6B6156">Desliza para ver todos los servicios →</p>
-<div class="carrusel" aria-label="Servicios" style="display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; margin: 0 -32px; padding: 0 32px 10px; scroll-padding: 0 32px">
-<article style="flex: 0 0 82%; scroll-snap-align: start; border: 1px solid #2E2A24; border-radius: 28px 28px 6px 6px; padding: 6px; box-sizing: border-box">
+<section id="servicios" style="max-width: 1240px; margin: 0 auto; padding: 96px 32px 48px; box-sizing: border-box">
+<p style="margin: 0 0 10px; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #3749C3">Lo que ofrecemos</p>
+<h2 style="margin: 0 0 32px; max-width: 720px; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; font-size: 46px; line-height: 1.08">Talleres, experiencias, clases privadas y renta de horno.</h2>
+<p class="solo-movil" style="margin: 0 0 10px; font-size: 14px; color: #6B6156">Desliza para ver todos los servicios →</p>
+<div class="servicios" aria-label="Servicios">
+<article style="border: 1px solid #2E2A24; border-radius: 28px 28px 6px 6px; padding: 6px; box-sizing: border-box">
 <div style="border: 1px solid #2E2A24; border-radius: 22px 22px 3px 3px; padding: 16px; display: flex; flex-direction: column; gap: 12px; height: 100%; box-sizing: border-box">
 <p style="margin: 0; font-size: 14px">01.</p>
 <img src="assets/torno-manos.jpg" alt="Manos centrando barro en el torno" loading="lazy" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center">
@@ -86,10 +59,10 @@ a:focus-visible,button:focus-visible{outline:2px solid #3749C3;outline-offset:3p
 <p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: 22px; white-space: nowrap">desde $3,600</p>
 </div>
 <p style="margin: 0; font-size: 16px; color: #6B6156">4 semanas, una clase de 3 horas por semana. Materiales y quemas incluidos.</p>
-<a href="https://instagram.com/casabuztina" data-wa="Hola, me gustaría inscribirme a torno en Casa Buztina." target="_blank" rel="noopener" style="margin-top: auto; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none">[ Inscribirme ]</a>
+<a href="talleres.html" style="margin-top: auto; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none">[ Ver talleres ]</a>
 </div>
 </article>
-<article style="flex: 0 0 82%; scroll-snap-align: start; border: 1px solid #2E2A24; border-radius: 28px 28px 6px 6px; padding: 6px; box-sizing: border-box">
+<article style="border: 1px solid #2E2A24; border-radius: 28px 28px 6px 6px; padding: 6px; box-sizing: border-box">
 <div style="border: 1px solid #2E2A24; border-radius: 22px 22px 3px 3px; padding: 16px; display: flex; flex-direction: column; gap: 12px; height: 100%; box-sizing: border-box">
 <p style="margin: 0; font-size: 14px">02.</p>
 <img src="assets/manual-petalos.jpg" alt="Pieza de barro rojo hecha a mano, con pétalos" loading="lazy" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 40%">
@@ -98,10 +71,10 @@ a:focus-visible,button:focus-visible{outline:2px solid #3749C3;outline-offset:3p
 <p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: 22px; white-space: nowrap">desde $3,100</p>
 </div>
 <p style="margin: 0; font-size: 16px; color: #6B6156">4 semanas, una clase de 3 horas por semana. Materiales y quemas incluidos.</p>
-<a href="https://instagram.com/casabuztina" data-wa="Hola, me gustaría inscribirme a construcción manual en Casa Buztina." target="_blank" rel="noopener" style="margin-top: auto; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none">[ Inscribirme ]</a>
+<a href="talleres.html" style="margin-top: auto; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none">[ Ver talleres ]</a>
 </div>
 </article>
-<article style="flex: 0 0 82%; scroll-snap-align: start; border: 1px solid #2E2A24; border-radius: 28px 28px 6px 6px; padding: 6px; box-sizing: border-box">
+<article style="border: 1px solid #2E2A24; border-radius: 28px 28px 6px 6px; padding: 6px; box-sizing: border-box">
 <div style="border: 1px solid #2E2A24; border-radius: 22px 22px 3px 3px; padding: 16px; display: flex; flex-direction: column; gap: 12px; height: 100%; box-sizing: border-box">
 <p style="margin: 0; font-size: 14px">03.</p>
 <img src="assets/tornos-clase.jpg" alt="Alumna trabajando en el torno" loading="lazy" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center">
@@ -109,11 +82,11 @@ a:focus-visible,button:focus-visible{outline:2px solid #3749C3;outline-offset:3p
 <h3 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: 26px; line-height: 1.1">Experiencia de torno</h3>
 <p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: 22px; white-space: nowrap">$900</p>
 </div>
-<p style="margin: 0; font-size: 16px; color: #6B6156">Una clase en grupo para sentir el barro girando. La pieza no se quema y la arcilla se recicla.</p>
-<a href="https://instagram.com/casabuztina" data-wa="Hola, me gustaría reservar la experiencia de torno en Casa Buztina." target="_blank" rel="noopener" style="margin-top: auto; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none">[ Reservar ]</a>
+<p style="margin: 0; font-size: 16px; color: #6B6156">Una clase en grupo para sentir el barro girando.</p>
+<a href="experiencias.html" style="margin-top: auto; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none">[ Ver experiencias ]</a>
 </div>
 </article>
-<article style="flex: 0 0 82%; scroll-snap-align: start; border: 1px solid #2E2A24; border-radius: 28px 28px 6px 6px; padding: 6px; box-sizing: border-box">
+<article style="border: 1px solid #2E2A24; border-radius: 28px 28px 6px 6px; padding: 6px; box-sizing: border-box">
 <div style="border: 1px solid #2E2A24; border-radius: 22px 22px 3px 3px; padding: 16px; display: flex; flex-direction: column; gap: 12px; height: 100%; box-sizing: border-box">
 <p style="margin: 0; font-size: 14px">04.</p>
 <img src="assets/manual-ondulada.jpg" alt="Manos dando forma a una pieza de barro rojo" loading="lazy" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center">
@@ -121,11 +94,11 @@ a:focus-visible,button:focus-visible{outline:2px solid #3749C3;outline-offset:3p
 <h3 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: 26px; line-height: 1.1">Experiencia de construcción</h3>
 <p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: 22px; white-space: nowrap">$1,800</p>
 </div>
-<p style="margin: 0; font-size: 16px; color: #6B6156">Dos clases: haces tu pieza (hasta 15 cm) y la esmaltas. Te la llevas después de la quema.</p>
-<a href="https://instagram.com/casabuztina" data-wa="Hola, me gustaría reservar la experiencia de construcción manual en Casa Buztina." target="_blank" rel="noopener" style="margin-top: auto; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none">[ Reservar ]</a>
+<p style="margin: 0; font-size: 16px; color: #6B6156">Dos clases: haces tu pieza y la esmaltas. Te la llevas a casa.</p>
+<a href="experiencias.html" style="margin-top: auto; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none">[ Ver experiencias ]</a>
 </div>
 </article>
-<article style="flex: 0 0 82%; scroll-snap-align: start; border: 1px solid #2E2A24; border-radius: 28px 28px 6px 6px; padding: 6px; box-sizing: border-box">
+<article style="border: 1px solid #2E2A24; border-radius: 28px 28px 6px 6px; padding: 6px; box-sizing: border-box">
 <div style="border: 1px solid #2E2A24; border-radius: 22px 22px 3px 3px; padding: 16px; display: flex; flex-direction: column; gap: 12px; height: 100%; box-sizing: border-box">
 <p style="margin: 0; font-size: 14px">05.</p>
 <img src="assets/retorneado.jpg" alt="Manos retorneando una pieza en el torno" loading="lazy" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center">
@@ -133,11 +106,11 @@ a:focus-visible,button:focus-visible{outline:2px solid #3749C3;outline-offset:3p
 <h3 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: 26px; line-height: 1.1">Clase privada de torno</h3>
 <p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: 22px; white-space: nowrap">$1,300</p>
 </div>
-<p style="margin: 0; font-size: 16px; color: #6B6156">Dos horas, solo tú y la maestra. Paquete de 4 sesiones: $4,900. No incluye esmalte ni quema.</p>
-<a href="https://instagram.com/casabuztina" data-wa="Hola, me gustaría reservar una clase privada de torno en Casa Buztina." target="_blank" rel="noopener" style="margin-top: auto; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none">[ Reservar ]</a>
+<p style="margin: 0; font-size: 16px; color: #6B6156">Dos horas, solo tú y la maestra.</p>
+<a href="experiencias.html" style="margin-top: auto; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none">[ Ver clases privadas ]</a>
 </div>
 </article>
-<article style="flex: 0 0 82%; scroll-snap-align: start; border: 1px solid #2E2A24; border-radius: 28px 28px 6px 6px; padding: 6px; box-sizing: border-box">
+<article style="border: 1px solid #2E2A24; border-radius: 28px 28px 6px 6px; padding: 6px; box-sizing: border-box">
 <div style="border: 1px solid #2E2A24; border-radius: 22px 22px 3px 3px; padding: 16px; display: flex; flex-direction: column; gap: 12px; height: 100%; box-sizing: border-box">
 <p style="margin: 0; font-size: 14px">06.</p>
 <img src="assets/hornos.jpg" alt="Los hornos eléctricos del taller" loading="lazy" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center">
@@ -146,127 +119,9 @@ a:focus-visible,button:focus-visible{outline:2px solid #3749C3;outline-offset:3p
 <p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: 22px; white-space: nowrap">desde $550</p>
 </div>
 <p style="margin: 0; font-size: 16px; color: #6B6156">Un piso o el horno completo, en bizcocho o alta temperatura.</p>
-<a href="#horno" style="margin-top: auto; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none">[ Ver precios ]</a>
+<a href="horno.html" style="margin-top: auto; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none">[ Ver precios ]</a>
 </div>
 </article>
-</div>
-</div>
-<div class="solo-escritorio" style="display: flex; flex-wrap: wrap; gap: 32px">
-<article style="flex: 1 1 420px; min-width: 0; border: 1px solid #2E2A24; border-radius: 32px 32px 6px 6px; padding: 6px">
-<div style="border: 1px solid #2E2A24; border-radius: 26px 26px 3px 3px; padding: 22px; display: flex; flex-direction: column; gap: 18px; height: 100%; box-sizing: border-box">
-<p style="margin: 0; font-size: 14px">01.</p>
-<img src="assets/torno-manos.jpg" alt="Manos centrando barro en el torno" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 2px">
-<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap">
-<h3 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: 34px; line-height: 1.1">Torno</h3>
-<p style="margin: 0; font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap">Desde <span style="font-family: 'Cormorant Garamond', serif; font-size: 28px; letter-spacing: 0; text-transform: none">$3,600</span></p>
-</div>
-<p style="margin: 0; color: #6B6156">Centrar, levantar paredes, retornear y esmaltar tus propias piezas en el torno.</p>
-<a href="https://instagram.com/casabuztina" data-wa="Hola, me gustaría inscribirme a un taller en Casa Buztina." target="_blank" rel="noopener" style="margin-top: auto; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none">[ Inscribirme a torno ]</a>
-</div>
-</article>
-
-<article style="flex: 1 1 420px; min-width: 0; border: 1px solid #2E2A24; border-radius: 32px 32px 6px 6px; padding: 6px">
-<div style="border: 1px solid #2E2A24; border-radius: 26px 26px 3px 3px; padding: 22px; display: flex; flex-direction: column; gap: 18px; height: 100%; box-sizing: border-box">
-<p style="margin: 0; font-size: 14px">02.</p>
-<img src="assets/manual-petalos.jpg" alt="Pieza de barro rojo hecha a mano, con pétalos" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 40%; border-radius: 2px">
-<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap">
-<h3 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; font-size: 34px; line-height: 1.1">Construcción manual</h3>
-<p style="margin: 0; font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap">Desde <span style="font-family: 'Cormorant Garamond', serif; font-size: 28px; letter-spacing: 0; text-transform: none">$3,100</span></p>
-</div>
-<p style="margin: 0; color: #6B6156">Placas, churros y pellizco: construir con las manos, a tu ritmo, piezas tan libres como quieras.</p>
-<a href="https://instagram.com/casabuztina" data-wa="Hola, me gustaría inscribirme a un taller en Casa Buztina." target="_blank" rel="noopener" style="margin-top: auto; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none">[ Inscribirme a construcción ]</a>
-</div>
-</article>
-</div>
-
-<div style="margin-top: 48px; overflow-x: auto">
-<table style="width: 100%; min-width: 560px; border-collapse: collapse; font-size: 18px">
-<caption style="text-align: left; padding-bottom: 12px; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #3749C3">Paquetes · una clase por semana</caption>
-<thead>
-<tr>
-<th scope="col" style="text-align: left; font-weight: 400; color: #6B6156; font-size: 15px; padding: 10px 0; border-bottom: 1px solid #2E2A24">Paquete</th>
-<th scope="col" style="text-align: right; font-weight: 400; color: #6B6156; font-size: 15px; padding: 10px 0; border-bottom: 1px solid #2E2A24">Torno</th>
-<th scope="col" style="text-align: right; font-weight: 400; color: #6B6156; font-size: 15px; padding: 10px 0; border-bottom: 1px solid #2E2A24">Construcción manual</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="padding: 14px 0; border-bottom: 1px solid #D8CDBB">4 clases <span style="color: #6B6156">· 4 semanas</span></td>
-<td style="padding: 14px 0; border-bottom: 1px solid #D8CDBB; text-align: right; white-space: nowrap">$3,600</td>
-<td style="padding: 14px 0; border-bottom: 1px solid #D8CDBB; text-align: right; white-space: nowrap">$3,100</td>
-</tr>
-<tr>
-<td style="padding: 14px 0; border-bottom: 1px solid #D8CDBB">8 clases <span style="color: #6B6156">· 8 semanas</span></td>
-<td style="padding: 14px 0; border-bottom: 1px solid #D8CDBB; text-align: right; white-space: nowrap">$6,900</td>
-<td style="padding: 14px 0; border-bottom: 1px solid #D8CDBB; text-align: right; white-space: nowrap">$5,900</td>
-</tr>
-<tr>
-<td style="padding: 14px 0; border-bottom: 1px solid #D8CDBB">12 clases <span style="color: #6B6156">· 12 semanas</span></td>
-<td style="padding: 14px 0; border-bottom: 1px solid #D8CDBB; text-align: right; white-space: nowrap">$10,000</td>
-<td style="padding: 14px 0; border-bottom: 1px solid #D8CDBB; text-align: right; white-space: nowrap">$8,600</td>
-</tr>
-</tbody>
-</table>
-<p style="margin: 14px 0 0; font-size: 16px; color: #6B6156">Si faltas, repones en otro horario con lugar dentro de tu paquete. ¿Te faltó tiempo para esmaltar o retornear? Clase suelta: $900.</p>
-</div>
-</section>
-
-<section id="horarios" style="max-width: 1240px; margin: 0 auto; padding: 48px 32px 96px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 48px 72px; align-items: flex-start">
-<div style="flex: 1 1 380px; min-width: 0">
-<img src="assets/tornos-vacios.jpg" alt="Tornos del taller junto a la ventana, con una planta grande" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover">
-</div>
-<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
-<p style="margin: 0; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #3749C3; display: flex; align-items: center; gap: 10px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M8 15V6M8 6C8 3 10 1.5 13 1.5C13 4.5 11 6 8 6ZM8 9C8 6.5 6 5 3 5C3 7.5 5 9 8 9Z"></path></svg>Horarios</p>
-<ul style="list-style: none; margin: 0; padding: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 34px; line-height: 1.3">
-<li style="color: #2E2A24">Lunes <span style="font-size: 22px; color: #6B6156">18:00 a 21:00</span></li>
-<li style="color: #2E2A24">Martes <span style="font-size: 22px; color: #6B6156">18:00 a 21:00</span></li>
-<li style="color: #2E2A24">Miércoles <span style="font-size: 22px; color: #6B6156">18:00 a 21:00</span></li>
-<li style="color: #2E2A24">Jueves <span style="font-size: 22px; color: #6B6156">18:00 a 21:00</span></li>
-<li style="color: #2E2A24">Jueves <span style="font-size: 22px; color: #6B6156">10:00 a 13:00</span></li>
-<li style="color: #2E2A24">Sábado <span style="font-size: 22px; color: #6B6156">10:00 a 13:00</span></li>
-</ul>
-<p style="margin: 0; max-width: 460px; color: #6B6156">Eliges tu horario fijo y la fecha en que quieres empezar. Cada horario tiene 7 lugares de torno y 6 de construcción manual; si está lleno, te anotas en la lista de espera.</p>
-<a href="https://instagram.com/casabuztina" data-wa="Hola, me gustaría inscribirme a un taller en Casa Buztina." target="_blank" rel="noopener" style="font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none">[ Ver lugares <span style="font-family: 'Cormorant Garamond', serif; font-style: italic; text-transform: none; letter-spacing: 0; font-size: 19px">disponibles</span> ]</a>
-<svg width="220" height="120" viewBox="0 0 220 120" fill="none" stroke="#2E2A24" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="align-self: flex-end; margin-top: 24px"><path d="M58 92C52 64 84 42 124 44C164 46 194 62 194 86C194 102 170 106 132 106H76C66 106 60 100 58 92Z"></path><path d="M60 88C50 80 52 62 68 58C82 55 94 66 92 80C90 94 70 98 60 88Z"></path><path d="M62 62L58 47L72 57"></path><path d="M80 57L88 45L90 61"></path><path d="M66 76Q70 79 74 76"></path><path d="M80 76Q84 79 88 76"></path><path d="M194 86C208 100 186 114 146 111C120 109 96 112 86 104"></path><path d="M120 46Q126 56 122 66"></path><path d="M138 46Q145 58 140 69"></path><path d="M156 50Q162 62 156 73"></path><path d="M173 58Q177 68 172 77"></path><path d="M106 49Q110 57 107 64"></path><path d="M30 112H206"></path></svg>
-</div>
-</section>
-
-<section id="faltas-y-pagos" style="background: #F3ECDF; border-top: 1px solid #2E2A24; border-bottom: 1px solid #2E2A24">
-<div style="max-width: 1240px; margin: 0 auto; padding: 96px 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 56px 72px; align-items: flex-start">
-<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
-<p style="margin: 0; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #3749C3">Faltas y reposiciones</p>
-<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; font-size: 40px; line-height: 1.1">Si faltas, no pierdes tu clase.</h2>
-<ul style="list-style: none; margin: 0; padding: 0; border-top: 1px solid #2E2A24">
-<li style="padding: 14px 0; border-bottom: 1px solid #D8CDBB">Puedes reponer en otro horario con lugar, en cualquier momento de tu paquete.</li>
-<li style="padding: 14px 0; border-bottom: 1px solid #D8CDBB">Si renuevas sin pausa entre un paquete y otro, las clases que no repusiste pasan a tu siguiente paquete. Si no renuevas a tiempo, se pierden.</li>
-<li style="padding: 14px 0; border-bottom: 1px solid #D8CDBB">Si el taller cierra un día por vacaciones o días festivos, tu paquete se recorre una semana.</li>
-<li style="padding: 14px 0; border-bottom: 1px solid #D8CDBB">En los paquetes de 8 y 12 clases puedes pausar una vez, hasta 2 semanas, avisando antes.</li>
-<li style="padding: 14px 0; border-bottom: 1px solid #D8CDBB">Para conservar tu horario, renueva antes de que termine tu paquete. Los paquetes no tienen devolución.</li>
-</ul>
-</div>
-<div id="pagos" style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
-<p style="margin: 0; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #3749C3">Formas de pago</p>
-<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; font-size: 40px; line-height: 1.1">Paga en línea con Mercado Pago, o en el taller.</h2>
-<p style="margin: 0; color: #6B6156">Con tarjeta de crédito o débito a través de Mercado Pago, o en efectivo o por transferencia directamente en el taller. El precio es el mismo con cualquier forma de pago.</p>
-<div style="display: flex; flex-direction: column; gap: 10px">
-<a href="https://instagram.com/casabuztina" data-mp="torno-4" data-wa="Hola, quiero pagar torno · 4 clases ($3,600) con Mercado Pago." target="_blank" rel="noopener" style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 18px; min-height: 44px; box-sizing: border-box; border: 1px solid #2E2A24; border-radius: 999px; color: #2E2A24; text-decoration: none; font-size: 16px"><span>Torno · 4 clases</span><span style="white-space: nowrap">$3,600</span></a>
-<a href="https://instagram.com/casabuztina" data-mp="torno-8" data-wa="Hola, quiero pagar torno · 8 clases ($6,900) con Mercado Pago." target="_blank" rel="noopener" style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 18px; min-height: 44px; box-sizing: border-box; border: 1px solid #2E2A24; border-radius: 999px; color: #2E2A24; text-decoration: none; font-size: 16px"><span>Torno · 8 clases</span><span style="white-space: nowrap">$6,900</span></a>
-<a href="https://instagram.com/casabuztina" data-mp="torno-12" data-wa="Hola, quiero pagar torno · 12 clases ($10,000) con Mercado Pago." target="_blank" rel="noopener" style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 18px; min-height: 44px; box-sizing: border-box; border: 1px solid #2E2A24; border-radius: 999px; color: #2E2A24; text-decoration: none; font-size: 16px"><span>Torno · 12 clases</span><span style="white-space: nowrap">$10,000</span></a>
-<a href="https://instagram.com/casabuztina" data-mp="manual-4" data-wa="Hola, quiero pagar construcción manual · 4 clases ($3,100) con Mercado Pago." target="_blank" rel="noopener" style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 18px; min-height: 44px; box-sizing: border-box; border: 1px solid #2E2A24; border-radius: 999px; color: #2E2A24; text-decoration: none; font-size: 16px"><span>Construcción manual · 4 clases</span><span style="white-space: nowrap">$3,100</span></a>
-<a href="https://instagram.com/casabuztina" data-mp="manual-8" data-wa="Hola, quiero pagar construcción manual · 8 clases ($5,900) con Mercado Pago." target="_blank" rel="noopener" style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 18px; min-height: 44px; box-sizing: border-box; border: 1px solid #2E2A24; border-radius: 999px; color: #2E2A24; text-decoration: none; font-size: 16px"><span>Construcción manual · 8 clases</span><span style="white-space: nowrap">$5,900</span></a>
-<a href="https://instagram.com/casabuztina" data-mp="manual-12" data-wa="Hola, quiero pagar construcción manual · 12 clases ($8,600) con Mercado Pago." target="_blank" rel="noopener" style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 18px; min-height: 44px; box-sizing: border-box; border: 1px solid #2E2A24; border-radius: 999px; color: #2E2A24; text-decoration: none; font-size: 16px"><span>Construcción manual · 12 clases</span><span style="white-space: nowrap">$8,600</span></a>
-</div>
-<p style="margin: 0; font-size: 15px; color: #6B6156">Después de pagar, escríbenos por WhatsApp para apartar tu horario y tu fecha de inicio.</p>
-</div>
-</div>
-</section>
-
-<section aria-label="La comunidad" style="position: relative; min-height: 560px; display: flex; align-items: center; overflow: hidden; background: #2E2A24">
-<img src="assets/grupo-mesa.jpg" alt="Alumnas trabajando alrededor de las mesas del taller" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
-<div style="position: relative; max-width: 1240px; width: 100%; margin: 0 auto; padding: 48px 32px; box-sizing: border-box">
-<div style="max-width: 520px; background: rgba(30,26,22,0.72); color: #FBF6EC; padding: 30px 34px; border-radius: 4px">
-<p style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 30px; line-height: 1.2">Además de un taller de cerámica, somos una comunidad.</p>
-</div>
 </div>
 </section>
 
@@ -303,119 +158,15 @@ a:focus-visible,button:focus-visible{outline:2px solid #3749C3;outline-offset:3p
 </div>
 </section>
 
-<section id="experiencias" class="solo-escritorio" style="max-width: 1240px; margin: 0 auto; padding: 96px 32px; box-sizing: border-box">
-<p style="margin: 0 0 10px; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #3749C3">Para empezar</p>
-<h2 style="margin: 0 0 40px; max-width: 720px; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; font-size: 46px; line-height: 1.08">¿Primera vez? Prueba antes de inscribirte, o toma una clase solo para ti.</h2>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px">
-
-<article style="border: 1px solid #2E2A24; border-radius: 28px 28px 6px 6px; padding: 6px">
-<div style="border: 1px solid #2E2A24; border-radius: 22px 22px 3px 3px; padding: 18px; display: flex; flex-direction: column; gap: 14px; height: 100%; box-sizing: border-box">
-<p style="margin: 0; font-size: 14px">03.</p>
-<img src="assets/tornos-clase.jpg" alt="Alumna trabajando en el torno" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover">
-<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px">
-<h3 style="margin: 0; font-size: 15px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase">Experiencia de torno</h3>
-<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: 26px; white-space: nowrap">$900</p>
-</div>
-<p style="margin: 0; font-size: 16px; color: #6B6156">Una clase en grupo para sentir el barro girando. Es para vivir la experiencia: la pieza no se quema y la arcilla se recicla.</p>
-</div>
-</article>
-
-<article style="border: 1px solid #2E2A24; border-radius: 28px 28px 6px 6px; padding: 6px">
-<div style="border: 1px solid #2E2A24; border-radius: 22px 22px 3px 3px; padding: 18px; display: flex; flex-direction: column; gap: 14px; height: 100%; box-sizing: border-box">
-<p style="margin: 0; font-size: 14px">04.</p>
-<img src="assets/manual-ondulada.jpg" alt="Manos dando forma a una pieza de barro rojo con paredes onduladas" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover">
-<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px">
-<h3 style="margin: 0; font-size: 15px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase">Experiencia de construcción</h3>
-<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: 26px; white-space: nowrap">$1,800</p>
-</div>
-<p style="margin: 0; font-size: 16px; color: #6B6156">Dos clases en grupo: en la primera haces tu pieza (hasta 15 cm) y en la segunda la esmaltas. Después de la quema, te la llevas.</p>
-</div>
-</article>
-
-<article style="border: 1px solid #2E2A24; border-radius: 28px 28px 6px 6px; padding: 6px">
-<div style="border: 1px solid #2E2A24; border-radius: 22px 22px 3px 3px; padding: 18px; display: flex; flex-direction: column; gap: 14px; height: 100%; box-sizing: border-box">
-<p style="margin: 0; font-size: 14px">05.</p>
-<img src="assets/retorneado.jpg" alt="Manos retorneando una pieza en el torno" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover">
-<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px">
-<h3 style="margin: 0; font-size: 15px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase">Clase privada de torno</h3>
-<p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: 26px; white-space: nowrap">$1,300</p>
-</div>
-<p style="margin: 0; font-size: 16px; color: #6B6156">Dos horas, solo tú y la maestra. Paquete de 4 sesiones: $4,900, repartidas entre tornear y retornear. No incluye esmalte ni quema.</p>
-</div>
-</article>
-</div>
-<a href="https://instagram.com/casabuztina" data-wa="Hola, me gustaría reservar una experiencia en Casa Buztina." target="_blank" rel="noopener" style="display: inline-block; margin-top: 32px; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none">[ Reservar una <span style="font-family: 'Cormorant Garamond', serif; font-style: italic; text-transform: none; letter-spacing: 0; font-size: 19px">experiencia</span> ]</a>
-</section>
-
-
-
-<section id="horno" style="max-width: 1240px; margin: 0 auto; padding: 96px 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 48px 72px; align-items: center">
-<div style="flex: 1 1 420px; min-width: 0">
-<img src="assets/hornos.jpg" alt="Los dos hornos eléctricos del taller" style="width: 100%; aspect-ratio: 3 / 2; object-fit: cover">
-</div>
-<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
-<p style="margin: 0; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #3749C3">Renta del horno</p>
-<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; font-size: 40px; line-height: 1.1">Quema tus piezas en nuestro horno eléctrico.</h2>
-<div style="overflow-x: auto">
-<table style="width: 100%; min-width: 380px; border-collapse: collapse">
-<thead>
-<tr>
-<th scope="col" style="text-align: left; font-weight: 400; color: #6B6156; font-size: 15px; padding: 8px 0; border-bottom: 1px solid #2E2A24"></th>
-<th scope="col" style="text-align: right; font-weight: 400; color: #6B6156; font-size: 15px; padding: 8px 0; border-bottom: 1px solid #2E2A24">Bizcocho</th>
-<th scope="col" style="text-align: right; font-weight: 400; color: #6B6156; font-size: 15px; padding: 8px 0; border-bottom: 1px solid #2E2A24">Alta temperatura</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="padding: 12px 0; border-bottom: 1px solid #D8CDBB">Horno completo</td>
-<td style="padding: 12px 0; border-bottom: 1px solid #D8CDBB; text-align: right">$1,300</td>
-<td style="padding: 12px 0; border-bottom: 1px solid #D8CDBB; text-align: right">$1,600</td>
-</tr>
-<tr>
-<td style="padding: 12px 0; border-bottom: 1px solid #D8CDBB">Un piso</td>
-<td style="padding: 12px 0; border-bottom: 1px solid #D8CDBB; text-align: right">$550</td>
-<td style="padding: 12px 0; border-bottom: 1px solid #D8CDBB; text-align: right">$650</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p style="margin: 0; font-size: 16px; color: #6B6156">Un piso es todo lo que cabe en una placa de unos 68 cm. Las piezas de más de 20 cm de alto se cobran como dos pisos. Solo pastas y esmaltes compatibles con la temperatura de la quema.</p>
-<a href="https://instagram.com/casabuztina" data-wa="Hola, me gustaría apartar el horno de Casa Buztina." target="_blank" rel="noopener" style="font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none">[ Apartar el horno ]</a>
-</div>
-</section>
-
-<section id="gatitos" style="border-top: 1px solid #2E2A24">
-<div style="max-width: 1240px; margin: 0 auto; padding: 96px 32px; box-sizing: border-box">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px 48px; margin-bottom: 40px">
-<div style="max-width: 620px">
-<p style="margin: 0 0 10px; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #3749C3">Los gatitos del taller</p>
-<h2 style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; font-size: 46px; line-height: 1.08">Señor, Jiji, Pastita y Coco también viven aquí.</h2>
-<p style="margin: 16px 0 0; color: #6B6156">Si los ves, trátalos con respeto. Y a Pastita, no le agarres la espalda :)</p>
-</div>
-<svg width="200" height="110" viewBox="0 0 220 120" fill="none" stroke="#2E2A24" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M58 92C52 64 84 42 124 44C164 46 194 62 194 86C194 102 170 106 132 106H76C66 106 60 100 58 92Z"></path><path d="M60 88C50 80 52 62 68 58C82 55 94 66 92 80C90 94 70 98 60 88Z"></path><path d="M62 62L58 47L72 57"></path><path d="M80 57L88 45L90 61"></path><path d="M66 76Q70 79 74 76"></path><path d="M80 76Q84 79 88 76"></path><path d="M194 86C208 100 186 114 146 111C120 109 96 112 86 104"></path><path d="M120 46Q126 56 122 66"></path><path d="M138 46Q145 58 140 69"></path><path d="M156 50Q162 62 156 73"></path><path d="M173 58Q177 68 172 77"></path></svg>
-</div>
-<p class="solo-movil" style="margin: 0 0 10px; font-size: 14px; color: #6B6156">Desliza para conocerlos →</p>
-<div class="gatos" aria-label="Los gatitos" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px">
-<figure style="margin: 0; border: 1px solid #2E2A24; border-radius: 24px 24px 4px 4px; padding: 6px">
-<img src="assets/gato-senor.jpg" alt="Señor, un gato atigrado gris" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: 75% 55%; border-radius: 19px 19px 2px 2px">
-<figcaption style="padding: 12px 8px 6px; display: flex; justify-content: space-between; align-items: baseline"><span style="font-family: 'Cormorant Garamond', serif; font-size: 26px">Señor</span></figcaption>
-</figure>
-<figure style="margin: 0; border: 1px solid #2E2A24; border-radius: 24px 24px 4px 4px; padding: 6px">
-<img src="assets/gato-jiji.jpg" alt="Jiji, un gato negro de ojos amarillos" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 19px 19px 2px 2px">
-<figcaption style="padding: 12px 8px 6px; display: flex; justify-content: space-between; align-items: baseline"><span style="font-family: 'Cormorant Garamond', serif; font-size: 26px">Jiji</span></figcaption>
-</figure>
-<figure style="margin: 0; border: 1px solid #2E2A24; border-radius: 24px 24px 4px 4px; padding: 6px">
-<img src="assets/gato-pastita.jpg" alt="Pastita, una gata blanco con negro echada en un cojín" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: 35% 50%; border-radius: 19px 19px 2px 2px">
-<figcaption style="padding: 12px 8px 6px; display: flex; justify-content: space-between; align-items: baseline"><span style="font-family: 'Cormorant Garamond', serif; font-size: 26px">Pastita</span></figcaption>
-</figure>
-<figure style="margin: 0; border: 1px solid #2E2A24; border-radius: 24px 24px 4px 4px; padding: 6px">
-<img src="assets/gato-coco.jpg" alt="Coco, un gato blanco" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 19px 19px 2px 2px">
-<figcaption style="padding: 12px 8px 6px; display: flex; justify-content: space-between; align-items: baseline"><span style="font-family: 'Cormorant Garamond', serif; font-size: 26px">Coco</span></figcaption>
-</figure>
+<section aria-label="La comunidad" style="position: relative; min-height: 560px; display: flex; align-items: center; overflow: hidden; background: #2E2A24">
+<img src="assets/grupo-mesa.jpg" alt="Alumnas trabajando alrededor de las mesas del taller" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<div style="position: relative; max-width: 1240px; width: 100%; margin: 0 auto; padding: 48px 32px; box-sizing: border-box">
+<div style="max-width: 520px; background: rgba(30,26,22,0.72); color: #FBF6EC; padding: 30px 34px; border-radius: 4px">
+<p style="margin: 0; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 30px; line-height: 1.2">Además de un taller de cerámica, somos una comunidad.</p>
 </div>
 </div>
 </section>
-
+</main>
 <footer style="border-top: 1px solid #2E2A24; background: #F3ECDF">
 <div style="max-width: 1240px; margin: 0 auto; padding: 56px 32px 40px; box-sizing: border-box; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 32px 48px">
 <div style="display: flex; flex-direction: column; gap: 14px; max-width: 360px">
@@ -428,48 +179,6 @@ a:focus-visible,button:focus-visible{outline:2px solid #3749C3;outline-offset:3p
 </div>
 </div>
 </footer>
-
 </div>
-<script>
-// Configuración: escribe aquí el número de WhatsApp con lada (por ejemplo 5218112345678) y la dirección del taller.
-var WHATSAPP = '528129063495';
-var DIRECCION = 'Las Brisas, Monterrey, N.L.';
-// Links de pago de Mercado Pago, uno por paquete. Mientras estén vacíos, el botón abre WhatsApp.
-var MERCADOPAGO = {
-  'torno-4': '', 'torno-8': '', 'torno-12': '',
-  'manual-4': '', 'manual-8': '', 'manual-12': ''
-};
-(function () {
-  if (WHATSAPP) {
-    document.querySelectorAll('a[data-wa]').forEach(function (a) {
-      a.href = 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(a.getAttribute('data-wa'));
-    });
-  }
-  Object.keys(MERCADOPAGO).forEach(function (k) {
-    var a = document.querySelector('a[data-mp="' + k + '"]');
-    if (a && MERCADOPAGO[k]) { a.href = MERCADOPAGO[k]; a.removeAttribute('data-wa'); }
-  });
-  if (window.matchMedia && window.matchMedia('(max-width: 640px)').matches) {
-    var exp = document.querySelector('nav a[href="#experiencias"]');
-    if (exp) exp.href = '#talleres';
-  }
-  if (DIRECCION) { var d = document.getElementById('direccion'); d.textContent = DIRECCION; d.hidden = false; }
-  var slides = document.querySelectorAll('#piezas .slide');
-  var contador = document.getElementById('contador');
-  var boton = document.getElementById('pausa');
-  var i = 0, n = slides.length;
-  var pausado = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  function pad(k) { return k < 10 ? '0' + k : String(k); }
-  function mostrar(k) {
-    slides[i].style.opacity = 0; slides[i].setAttribute('aria-hidden', 'true');
-    i = k; slides[i].style.opacity = 1; slides[i].removeAttribute('aria-hidden');
-    contador.textContent = pad(i + 1) + ' / ' + pad(n);
-  }
-  function etiqueta() { boton.textContent = pausado ? 'Reanudar' : 'Pausar'; }
-  etiqueta();
-  boton.addEventListener('click', function () { pausado = !pausado; etiqueta(); });
-  setInterval(function () { if (!pausado && !document.hidden) mostrar((i + 1) % n); }, 800);
-})();
-</script>
 </body>
 </html>

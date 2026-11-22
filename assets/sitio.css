@@ -1,0 +1,48 @@
+/* Casa Buztina · estilos compartidos */
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:#FBF6EC;color:#2E2A24;font-family:"EB Garamond",Georgia,serif}
+a{color:#3749C3}a:hover{color:#26348F}
+img{display:block}
+a:focus-visible,button:focus-visible{outline:2px solid #3749C3;outline-offset:3px}
+.pagina{background:#FBF6EC;color:#2E2A24;font-size:18px;line-height:1.55}
+
+/* Cabecera y menú */
+.cabecera{border-bottom:1px solid #2E2A24;background:#FBF6EC;position:sticky;top:0;z-index:10}
+.cabecera-in{max-width:1240px;margin:0 auto;padding:14px 32px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px;box-sizing:border-box}
+.logo{display:block}
+#menu{display:flex;flex-wrap:wrap;gap:6px 26px;font-size:14px;letter-spacing:.12em;text-transform:uppercase}
+#menu a{color:#2E2A24;text-decoration:none;padding:6px 0;border-bottom:1px solid transparent}
+#menu a:hover{border-bottom-color:#2E2A24}
+#menu a[aria-current="page"]{color:#3749C3;border-bottom-color:#3749C3}
+.acciones{display:flex;align-items:center;gap:12px;font-size:14px;letter-spacing:.12em;text-transform:uppercase}
+.acciones>a{background:#3749C3;color:#FBF6EC;text-decoration:none;padding:12px 22px;border-radius:999px;min-height:44px;box-sizing:border-box;display:inline-flex;align-items:center}
+.acciones>a:hover{background:#26348F;color:#FBF6EC}
+.menu-btn{display:none;appearance:none;background:none;border:1px solid #2E2A24;border-radius:999px;width:44px;height:44px;align-items:center;justify-content:center;color:#2E2A24;cursor:pointer}
+
+/* Carruseles */
+.solo-movil{display:none!important}
+.servicios{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+
+@media (max-width: 900px){
+  .servicios{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width: 640px){
+  .cabecera-in{padding:10px 20px;gap:8px 10px;flex-wrap:wrap}
+  .logo{flex:1 1 auto}
+  .logo img{height:40px!important}
+  .menu-btn{display:inline-flex}
+  .acciones>a{padding:10px 16px;font-size:13px}
+  #menu{display:none;order:3;width:100%;flex-direction:column;gap:0;padding-bottom:8px}
+  #menu.abierto{display:flex}
+  #menu a{padding:14px 0;border-bottom:none;border-top:1px solid #D8CDBB}
+  #menu a[aria-current="page"]{border-bottom:none}
+  .solo-escritorio{display:none!important}
+  .solo-movil{display:flex!important}
+  .servicios,.gatos{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px!important;margin:0 -32px;padding:0 32px 10px;scroll-padding:0 32px}
+  .servicios>article{flex:0 0 82%;scroll-snap-align:start}
+  .gatos>figure{flex:0 0 70%;scroll-snap-align:start}
+  #inicio h1{font-size:32px!important}
+  h2{font-size:34px!important}
+  section [style*="rgba(30,26,22,0.72)"]{padding:24px!important}
+}
