@@ -46,9 +46,3 @@ a:focus-visible,button:focus-visible{outline:2px solid #3749C3;outline-offset:3p
   h2{font-size:34px!important}
   section [style*="rgba(30,26,22,0.72)"]{padding:24px!important}
 }
-
-/* El mouse es la carita de Pastita (solo en computadora) */
-@media (pointer: fine){
-  html,body{cursor:url("cursor-pastita.png") 16 16,auto}
-  a,button,[role="button"]{cursor:url("cursor-pastita.png") 16 16,pointer}
-}
