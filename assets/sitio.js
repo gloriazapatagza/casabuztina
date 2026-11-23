@@ -6,8 +6,12 @@ var DIRECCION = 'Las Brisas, Monterrey, N.L.';
 
 // Links de pago de Mercado Pago, uno por paquete. Mientras estén vacíos, el botón abre WhatsApp.
 var MERCADOPAGO = {
-  'torno-4': '', 'torno-8': '', 'torno-12': '',
-  'manual-4': '', 'manual-8': '', 'manual-12': ''
+  'torno-4': 'https://mpago.la/2wtmGL3',
+  'torno-8': 'https://mpago.la/313DTA6',
+  'torno-12': 'https://mpago.la/2cEKLny',
+  'manual-4': 'https://mpago.la/1rXurLR',
+  'manual-8': 'https://mpago.la/2FuPAkc',
+  'manual-12': 'https://mpago.la/2XTcgu1'
 };
 
 document.addEventListener('DOMContentLoaded', function () {
